@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JUDAKE.DataTypes
+namespace JUDAKE.DataAccess
 {
-    public class Class1
+    class BaseData
     {
     }
 }

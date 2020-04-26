@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using JUDAKE.WebApi.Utility.Factories;
+using JUDAKE.WebApi.Utility.Token;
 using System.Web.Http;
 
 namespace JUDAKE.WebApi
@@ -13,6 +12,11 @@ namespace JUDAKE.WebApi
 
             // Rutas de API web
             config.MapHttpAttributeRoutes();
+
+            config.MessageHandlers.Add(new TokenValidationHandler());
+
+            config.SetCorsPolicyProviderFactory(new CorsPolicyFactory());
+            config.EnableCors();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JUDAKE.BusinessLayer
+namespace JUDAKE.BusinessLayer.Utility
 {
-    public class Class1
+    class BaseLogic
     {
     }
 }
