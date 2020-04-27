@@ -1,4 +1,4 @@
-﻿//using JBLV.Log;
+﻿using JBLV.Log;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +24,7 @@ namespace JUDAKE.WebApi.Utility
 
         public static string MessageError(Exception ex)
         {
-            //Log.RegistrarLog(NivelLog.Error, ex);
+            Log.RegistrarLog(NivelLog.Error, ex);
             return ex.Message;
         }
     }

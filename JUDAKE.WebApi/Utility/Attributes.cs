@@ -11,7 +11,7 @@ namespace JUDAKE.WebApi.Utility
         {
             public override void OnException(HttpActionExecutedContext context)
             {
-                //Functions.MessageError(context.Exception);
+                Functions.MessageError(context.Exception);
                 if (context.Exception is NotImplementedException)
                 {
                     context.Response = new HttpResponseMessage(HttpStatusCode.NotImplemented);

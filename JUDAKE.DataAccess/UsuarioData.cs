@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JUDAKE.BusinessLayer.Utility
+namespace JUDAKE.DataAccess
 {
-    class BaseLogic
+    class UsuarioData
     {
     }
 }
